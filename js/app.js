@@ -37,9 +37,9 @@
       afterStep: 4,
       emoji: "🔬",
       headline: '{name}, o que você acabou de confirmar tem um nome que poucos médicos vão te contar. <span class="highlight">Bloqueio vascular peniano silencioso.</span>',
-      getText: () => "Não é da idade. Nunca foi. É um entupimento progressivo nos vasos que levam sangue pro pênis. Começa devagar — e quando você percebe, já perdeu tamanho, firmeza e duração. Agora vamos mapear o estrago real no seu corpo. Sintoma por sintoma. Vaso por vaso.",
+      getText: () => "Não é da idade. Nunca foi. É um entupimento progressivo nos vasos que levam sangue pro pênis. Começa devagar e quando você percebe, já perdeu tamanho, firmeza e duração. Agora vamos mapear o estrago real no seu corpo. Sintoma por sintoma. Vaso por vaso.",
       stat: "Homens que identificam o padrão vascular agora têm 3.7x mais chance de reverter o dano completo.",
-      cta: "ENTENDI — MAPEAR O ESTRAGO",
+      cta: "ENTENDI MAPEAR O ESTRAGO",
     },
     {
       afterStep: 11,
@@ -57,15 +57,15 @@
           return `${nome}, acordar com raiva de existir não é frescura. É seu hormônio no subsolo. Testosterona no chão. Sangue que não circula. E quando o sangue não circula, o pênis é o primeiro órgão a pagar a conta. Mas tem como reverter.`;
         }
         if (sono === "pessimo") {
-          return `${nome}, sem sono profundo seu corpo não produz testosterona. Sem testosterona, o sangue não chega ao pênis com pressão. Sem pressão, não tem tamanho, não tem firmeza, não tem duração. É uma cascata — e o protocolo corta na raiz.`;
+          return `${nome}, sem sono profundo seu corpo não produz testosterona. Sem testosterona, o sangue não chega ao pênis com pressão. Sem pressão, não tem tamanho, não tem firmeza, não tem duração. É uma cascata e o protocolo corta na raiz.`;
         }
         if (sono === "superficial") {
-          return `${nome}, dormir sem descansar é como ligar o celular no carregador com o fio solto. De manhã a bateria está em 12%. Seu corpo funciona igual — e o pênis é o primeiro a sentir.`;
+          return `${nome}, dormir sem descansar é como ligar o celular no carregador com o fio solto. De manhã a bateria está em 12%. Seu corpo funciona igual e o pênis é o primeiro a sentir.`;
         }
-        return "Cada resposta que você deu aponta pro mesmo lugar: seus vasos estão se fechando e o sangue não está chegando onde precisa. Agora vamos cruzar com seus hábitos — e descobrir o que está acelerando o estrago.";
+        return "Cada resposta que você deu aponta pro mesmo lugar: seus vasos estão se fechando e o sangue não está chegando onde precisa. Agora vamos cruzar com seus hábitos e descobrir o que está acelerando o estrago.";
       },
       stat: "93% dos homens com esse perfil vascular respondem ao protocolo em menos de 21 dias.",
-      cta: "CONTINUAR — VER MEUS HÁBITOS",
+      cta: "CONTINUAR E VER MEUS HÁBITOS",
     },
     {
       afterStep: 17,
@@ -73,10 +73,10 @@
       headline: 'Daqui a pouco você vai ver um número. <span class="highlight">Esse número revela o quanto seus vasos já fecharam.</span>',
       getText: () => {
         const nome = state.userData.name || "você";
-        return `${nome}, o sistema cruzou tudo que você respondeu com o banco de dados de 17.483 homens. O que vem agora é o seu diagnóstico vascular — o grau real de bloqueio nos vasos que alimentam o pênis. Vai mostrar se você ainda está na janela de reversão. Alguns homens ficam em choque. Outros sentem alívio de finalmente entender. Prepara.`;
+        return `${nome}, o sistema cruzou tudo que você respondeu com o banco de dados de 17.483 homens. O que vem agora é o seu diagnóstico vascular o grau real de bloqueio nos vasos que alimentam o pênis. Vai mostrar se você ainda está na janela de reversão. Alguns homens ficam em choque. Outros sentem alívio de finalmente entender. Prepara.`;
       },
       stat: "A maioria dos homens nunca soube que esse número existia até fazer esse teste.",
-      cta: "ESTOU PRONTO — VER MEU DIAGNÓSTICO",
+      cta: "ESTOU PRONTO PARA VER MEU DIAGNÓSTICO",
     },
   ];
 
