@@ -93,7 +93,7 @@ const STEPS = [
     id: 3,
     phase: 1,
     type: "single-select",
-    question: "Agora me diz a verdade — o que tá tirando seu sono de noite?",
+    question: "Agora me diz a de — o que tá tirando seu sono de noite?",
     microcopy: "Ninguém vai ver isso. Só eu e você aqui.",
     options: [
       { value: "libido",  label: "Meu desempenho na cama despencou — e eu sei disso",       icon: "🔥" },
@@ -150,7 +150,7 @@ const STEPS = [
     id: 6,
     phase: 2,
     type: "single-select",
-    question: "Na hora H — como tá de verdade?",
+    question: "Na hora H como tá de verdade?",
     microcopy: "Sem aquela de 'foi só uma vez'. Eu quero saber o padrão. O que acontece toda vez.",
     options: [
       { value: "toro",  label: "Firme do começo ao fim — sem problema nenhum",                icon: "💪", score: 3 },
@@ -192,7 +192,7 @@ const STEPS = [
     phase: 2,
     type: "single-select",
     question: "Você já precisou do remedinho azul pra funcionar?",
-    microcopy: "Pode ser honesto. Não existe resposta certa aqui — só existe a verdade.",
+    microcopy: "Pode ser honesto. Não existe resposta certa aqui só existe a verdade.",
     options: [
       { value: "nao",     label: "Nunca precisei",                                        icon: "🚫", score: 3 },
       { value: "asvezes", label: "Já usei — tenho em casa por precaução",                 icon: "💊", score: 1 },
@@ -232,7 +232,7 @@ const STEPS = [
     question: "E o seu sono — como tá?",
     microcopy: "É durante o sono profundo que o corpo produz testosterona e hormônio do crescimento. Se você dorme mal, nada se recupera — nem músculo, nem ereção, nem disposição.",
     options: [
-      { value: "profundo",    label: "Durmo fundo — acordo descansado de verdade",              icon: "✅", score: 3 },
+      { value: "profundo",    label: "Durmo fundo acordo descansado de verdade",              icon: "✅", score: 3 },
       { value: "superficial", label: "Durmo mas acordo cansado do mesmo jeito",                 icon: "⚠️", score: 1 },
       { value: "pessimo",     label: "Insônia, suor noturno, acordo 3x por noite",              icon: "🛑", score: 0 },
     ],
