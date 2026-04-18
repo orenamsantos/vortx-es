@@ -35,48 +35,48 @@
   const INTERSTITIALS = [
     {
       afterStep: 4,
-      emoji: "☣️",
-      headline: '{name}, isso não é envelhecimento. Isso é <span class="highlight">veneno</span> que foi entrando devagar.',
-      getText: () => "O que você acabou de confirmar tem nome, tem causa e tem jeito de reverter. Não é da idade — nunca foi. Agora vamos mapear o estrago no seu corpo — sintoma por sintoma. Vai doer um pouco ver. Mas é isso que muda.",
-      stat: "Quem identifica o padrão agora tem 3x mais chance de reverter tudo.",
-      cta: "ENTENDI — VER O ESTRAGO",
+      emoji: "🔬",
+      headline: '{name}, o que você acabou de confirmar tem um nome que poucos médicos vão te contar. <span class="highlight">Bloqueio vascular peniano silencioso.</span>',
+      getText: () => "Não é da idade. Nunca foi. É um entupimento progressivo nos vasos que levam sangue pro pênis. Começa devagar — e quando você percebe, já perdeu tamanho, firmeza e duração. Agora vamos mapear o estrago real no seu corpo. Sintoma por sintoma. Vaso por vaso.",
+      stat: "Homens que identificam o padrão vascular agora têm 3.7x mais chance de reverter o dano completo.",
+      cta: "ENTENDI — MAPEAR O ESTRAGO",
     },
     {
       afterStep: 11,
       emoji: "🧠",
-      headline: 'O quadro de <span class="highlight">{name}</span> está claro demais.',
+      headline: 'O mapa vascular de <span class="highlight">{name}</span> já está se formando. E não é bonito.',
       getText: () => {
         const manha = state.answers[9];
         const sono  = state.answers[10];
         const nome  = state.userData.name || "você";
 
         if (manha === "zumbi") {
-          return `${nome} acorda com o corpo pesado e cheio de dor. Isso não é cansaço — é seu corpo se destruindo à noite em vez de se recuperar. O protocolo foi feito pra parar isso.`;
+          return `${nome}, seu corpo não está se recuperando à noite. Está se DESTRUINDO. Enquanto você dorme, cortisol come sua testosterona viva. Resultado: pau menor, ereção fraca, gozar rápido. E cada noite assim é mais dano. O protocolo foi feito pra reverter exatamente isso.`;
         }
         if (manha === "odio") {
-          return `${nome} acorda com raiva de ter que existir. Não é frescura — é seu hormônio no chão. E tem como reverter isso.`;
+          return `${nome}, acordar com raiva de existir não é frescura. É seu hormônio no subsolo. Testosterona no chão. Sangue que não circula. E quando o sangue não circula, o pênis é o primeiro órgão a pagar a conta. Mas tem como reverter.`;
         }
         if (sono === "pessimo") {
-          return `${nome} não dorme direito. Sem sono fundo, seu corpo para de produzir o que recupera músculo, desejo e disposição. Cada noite ruim é mais estrago acumulado.`;
+          return `${nome}, sem sono profundo seu corpo não produz testosterona. Sem testosterona, o sangue não chega ao pênis com pressão. Sem pressão, não tem tamanho, não tem firmeza, não tem duração. É uma cascata — e o protocolo corta na raiz.`;
         }
         if (sono === "superficial") {
-          return `${nome} dorme mas não descansa. É como ligar o carregador com a tomada folgada — não carrega. Seu corpo não está se recuperando.`;
+          return `${nome}, dormir sem descansar é como ligar o celular no carregador com o fio solto. De manhã a bateria está em 12%. Seu corpo funciona igual — e o pênis é o primeiro a sentir.`;
         }
-        return "Não é aleatório. Não é fraqueza. Cada coisa que você respondeu aponta pro mesmo problema. Agora vamos cruzar com seus hábitos — e o protocolo certo vai aparecer.";
+        return "Cada resposta que você deu aponta pro mesmo lugar: seus vasos estão se fechando e o sangue não está chegando onde precisa. Agora vamos cruzar com seus hábitos — e descobrir o que está acelerando o estrago.";
       },
-      stat: "93% dos homens com esse perfil respondem ao protocolo em menos de 21 dias.",
+      stat: "93% dos homens com esse perfil vascular respondem ao protocolo em menos de 21 dias.",
       cta: "CONTINUAR — VER MEUS HÁBITOS",
     },
     {
       afterStep: 17,
       emoji: "🔴",
-      headline: 'Daqui a pouco você vai ver um número. <span class="highlight">Esse número vai explicar tudo.</span>',
+      headline: 'Daqui a pouco você vai ver um número. <span class="highlight">Esse número revela o quanto seus vasos já fecharam.</span>',
       getText: () => {
         const nome = state.userData.name || "você";
-        return `${nome}, o sistema terminou de analisar tudo. O que vem agora é o seu resultado — o tamanho real do problema e se ainda dá tempo de virar. Alguns homens ficam com raiva quando veem. Outros se aliviam de entender o que estava acontecendo. Os dois são normais. Prepara.`;
+        return `${nome}, o sistema cruzou tudo que você respondeu com o banco de dados de 17.483 homens. O que vem agora é o seu diagnóstico vascular — o grau real de bloqueio nos vasos que alimentam o pênis. Vai mostrar se você ainda está na janela de reversão. Alguns homens ficam em choque. Outros sentem alívio de finalmente entender. Prepara.`;
       },
-      stat: "Esse é o momento em que a maioria dos homens finalmente entende o que estava acontecendo.",
-      cta: "ESTOU PRONTO — VER MEU RESULTADO",
+      stat: "A maioria dos homens nunca soube que esse número existia até fazer esse teste.",
+      cta: "ESTOU PRONTO — VER MEU DIAGNÓSTICO",
     },
   ];
 
@@ -821,8 +821,8 @@
       <p class="result-description">${zone.description}</p>
       <div class="result-critical-areas">${areasHtml}</div>
       <div class="result-urgency-block">
-        <p class="result-urgency-text">Cada mês sem agir, mais uma porta fecha. Esse grau de dano ainda tem reversão — mas não pra sempre.</p>
-        <p class="result-urgency-subtext">O protocolo foi feito especificamente pra esse perfil.</p>
+        <p class="result-urgency-text">Seus vasos estão se fechando agora — enquanto você lê isso. Cada mês sem agir, mais bloqueio, menos sangue, menos tamanho, menos duração. Esse grau ainda tem reversão — mas não pra sempre.</p>
+        <p class="result-urgency-subtext">O protocolo de reversão vascular foi calibrado pro seu perfil exato.</p>
       </div>
       <div style="width:100%;padding:20px 0;display:flex;justify-content:center;">
         <button class="btn-cta" id="btn-see-protocol">QUERO VER O QUE RESOLVE ISSO</button>
@@ -861,13 +861,13 @@
 
     let bridgeText;
     if (score <= 35) {
-      bridgeText = `${name}, ainda dá tempo — mas não muito. O protocolo foi feito exatamente para esse grau de estrago. Não é pra todo mundo. É pra quem chegou até aqui e ainda quer virar o jogo.`;
+      bridgeText = `${name}, seus vasos estão quase fechados. Mas "quase" significa que ainda dá tempo. O protocolo foi criado exatamente pra esse grau de bloqueio — pra forçar o sangue a voltar. Não é pra todo mundo. É pra quem chegou até aqui e quer o tamanho, a firmeza e a duração de volta.`;
     } else if (score <= 60) {
-      bridgeText = `${name}, você está no limite. Dá pra reverter — mas cada mês sem agir fecha mais uma porta. O protocolo certo para o seu caso está pronto.`;
+      bridgeText = `${name}, seus vasos estão se fechando — mês a mês. O tamanho já caiu. A duração já encurtou. O protocolo de reversão vascular está calibrado pro seu grau exato de bloqueio. Mas cada mês sem agir fecha mais um vaso.`;
     } else if (score <= 80) {
-      bridgeText = `${name}, ainda dá pra virar isso. Mas não espera demais. O protocolo está calibrado pro seu perfil — e o mapa está aqui.`;
+      bridgeText = `${name}, a queda ainda é sutil — mas está acelerando. Em 2-3 anos sem intervenção, o dano vira irreversível. O protocolo trava a queda e maximiza o fluxo sanguíneo pro pênis enquanto ainda dá tempo.`;
     } else {
-      bridgeText = `${name}, você está bem — por enquanto. O protocolo garante que você continue assim enquanto os outros ao redor vão caindo. Maximiza agora o que você tem.`;
+      bridgeText = `${name}, seus vasos ainda respondem. Mas os fatores de risco estão lá. O protocolo garante que você mantenha — e maximize — cada centímetro, cada minuto de duração, cada ereção. Enquanto os outros ao redor vão perdendo.`;
     }
 
     document.getElementById("bridge").innerHTML = `
@@ -896,10 +896,10 @@
     const painArea = state.answers[21];
 
     const headlineMap = {
-      parceira: "O Protocolo Para Você Voltar a Ser o Homem Que Sua Mulher Quer Todo Dia",
-      eu_mesmo: "O Protocolo Para Você se Reconhecer de Novo Quando Olhar no Espelho",
-      trabalho: "O Protocolo Para Você Recuperar o Foco e o Gás Que Fazia Você Vencer",
-      tudo:     "O Protocolo Para Você Recuperar Tudo de Uma Vez",
+      parceira: "O Protocolo Pra Você Voltar a Fazer Sua Mulher Implorar Por Mais",
+      eu_mesmo: "O Protocolo Pra Você Olhar Pra Baixo e Se Reconhecer de Novo",
+      trabalho: "O Protocolo Pra Você Recuperar a Potência Que Te Fazia Imbatível",
+      tudo:     "O Protocolo Pra Você Recuperar Tamanho, Duração e Controle — Tudo de Volta",
     };
     const headline = headlineMap[painArea] || PROTOCOL_DATA.headline;
 
@@ -990,10 +990,10 @@
 
     const score = state.score;
     const pricingHeadline = score <= 35
-      ? `${name ? name + ", a" : "A"} porta ainda está aberta. Por pouco tempo.`
+      ? `${name ? name + ", seus" : "Seus"} vasos estão quase fechados. Essa é a última janela.`
       : score <= 60
-      ? `${name ? name + ", o" : "O"} protocolo está pronto. Falta você decidir.`
-      : `${name ? name + ", seu" : "Seu"} protocolo está aqui. Acessa agora.`;
+      ? `${name ? name + ", o" : "O"} bloqueio ainda é reversível. Mas não por muito tempo.`
+      : `${name ? name + ", o" : "O"} protocolo vascular está pronto. Falta você.`;
 
     document.getElementById("pricing").innerHTML = `
       <div style="text-align:center;">
@@ -1007,14 +1007,14 @@
       </div>
 
       <div class="pricing-anchor-block">
-        <p class="pricing-anchor-text">Um médico especialista cobra <strong>R$800 a R$1.200 por consulta</strong>. Você precisaria de 4 a 6 consultas só pra mapear o que esse protocolo já resolveu.</p>
-        <p class="pricing-anchor-sub">O acesso completo custa menos do que uma única consulta.</p>
+        <p class="pricing-anchor-text">Um urologista vascular cobra <strong>R$1.200 a R$2.500 por consulta</strong>. Você precisaria de 6 a 10 consultas só pra DIAGNOSTICAR o que esse protocolo já RESOLVE.</p>
+        <p class="pricing-anchor-sub">O acesso completo custa menos do que uma única consulta. E funciona onde a consulta falha.</p>
       </div>
 
       <div class="pricing-plans">${plansHtml}</div>
 
       <div class="pricing-urgency-bio-block">
-        <p class="pricing-urgency-bio-text">Você vai dormir hoje igual. Acordar amanhã igual. Olhar no espelho igual. A diferença entre quem age agora e quem espera mais um mês se mede em dano que não tem mais volta. <strong>Você decide agora.</strong></p>
+        <p class="pricing-urgency-bio-text">Hoje à noite você vai deitar na cama. Vai olhar pro teto. E vai saber que poderia ter feito diferente. Amanhã vai acordar igual — ou pior. O bloqueio vascular não espera. Não para. Não negocia. <strong>A única pergunta é: você vai agir enquanto ainda dá tempo?</strong></p>
       </div>
 
       <div class="guarantee-box guarantee-box--pre-cta">
