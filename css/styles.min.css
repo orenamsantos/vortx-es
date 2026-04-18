@@ -197,34 +197,11 @@ a { color: var(--gold); text-decoration: none; }
 }
 
 .gate-timer-strip {
-  display: inline-block;
-  padding: 10px 22px;
-  border: 1px solid rgba(201, 168, 76, 0.35);
-  border-radius: var(--radius-btn);
-  font-size: .85rem;
+  font-size: .82rem;
   font-weight: 600;
   color: var(--gold-light);
   letter-spacing: .3px;
-  position: relative;
-  overflow: hidden;
-  background: rgba(201, 168, 76, 0.06);
-}
-
-.gate-timer-strip::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, .18), transparent);
-  animation: stripShimmer 3s ease-in-out infinite;
-  will-change: transform;
-}
-
-@keyframes stripShimmer {
-  0% { transform: translateX(-100%); }
-  50%, 100% { transform: translateX(100%); }
+  line-height: 1.5;
 }
 
 .gate-social-proof {
