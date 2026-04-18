@@ -125,7 +125,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     </div>
     <div class="feat">
       <div class="feat-icon">🍽️</div>
-      <div><div class="feat-title">Dieta Anti-Estrogênio de 21 Dias</div><div class="feat-desc">O que comer e o que cortar pra parar de fabricar hormônio feminino. Cada quilo de barriga eliminado = mais sangue disponível pro pênis. Lista de mercado inclusa.</div></div>
+      <div><div class="feat-title">Dieta Anti-Estrogênio de 21 Dias</div><div class="feat-desc">O que comer e o que cortar pra parar de fabricar hormônio feminino, e cada quilo de barriga eliminado = mais sangue disponível pro pênis. Lista de mercado inclusa.</div></div>
     </div>
     <div class="feat">
       <div class="feat-icon">📊</div>
@@ -136,11 +136,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <!-- COMPARAÇÃO -->
   <div class="comparison fade-up d3">
     <div class="comparison-header"><span>Nos primeiros 21 dias</span><span>Sem</span><span>Com</span></div>
-    <div class="comparison-row"><span class="comparison-label">Vasos começam a abrir na 1ª semana</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
-    <div class="comparison-row"><span class="comparison-label">Gordura estrogênica queimada</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
-    <div class="comparison-row"><span class="comparison-label">Testosterona produzida à noite</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
-    <div class="comparison-row"><span class="comparison-label">Estrogênio bloqueado ativamente</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
-    <div class="comparison-row"><span class="comparison-label">Sabe se os vasos estão reabrindo</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
+    <div class="comparison-row"><span class="comparison-label">Sua mulher nota diferença na 1ª semana</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
+    <div class="comparison-row"><span class="comparison-label">Barriga que fabrica hormônio feminino: eliminada</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
+    <div class="comparison-row"><span class="comparison-label">Acorda com energia e ereção toda manhã</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
+    <div class="comparison-row"><span class="comparison-label">Para de fabricar hormônio feminino</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
+    <div class="comparison-row"><span class="comparison-label">Sabe exatamente se está funcionando</span><span class="comparison-no">✗</span><span class="comparison-yes">✓</span></div>
   </div>
 
   <!-- DEPOIMENTO -->
@@ -169,8 +169,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <!-- CTA -->
   <div class="fade-up d6">
     <a href="#" class="btn" id="btn-cross">ADICIONAR IGNIÇÃO VASCULAR<span class="btn-price">R$ 27</span></a>
-    <p class="btn-sub">Acesso imediato • Vasos abrem mais rápido</p>
-    <button class="btn-skip" id="btn-skip-final">Não, vou esperar 21 dias pelo resultado natural →</button>
+    <p class="btn-sub">Acesso imediato • Resultado na metade do tempo</p>
+    <button class="btn-skip" id="btn-skip-final">Não, vou ficar 21 dias esperando sem saber se funciona →</button>
   </div>
 
   <div class="footer"><div class="footer-logo">VORTX<span></span></div><p>Protocolo de Reversão Vascular Masculina</p></div>
@@ -187,11 +187,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   const ctxEl = document.getElementById('cross-context');
 
   if (soro === 'sim') {
-    subEl.textContent = 'O Soro abre os vasos HOJE À NOITE. O Ignição Vascular garante que eles fiquem abertos toda noite, sem depender de dose nenhuma.';
-    ctxEl.innerHTML = '<p>Você fez a escolha certa com o Soro Vasodilatador. Mas ele é emergência, abre os vasos por uma noite. <strong>O Protocolo Ignição Vascular é o que mantém os vasos permanentemente abertos.</strong> É a rotina de 5 minutos que transforma o efeito temporário em tamanho, firmeza e duração PERMANENTES.</p>';
+    subEl.textContent = 'O Soro resolve hoje. O Ignição garante que o resultado fique permanente, toda noite, sem precisar repetir dose.';
+    ctxEl.innerHTML = '<p>O Soro vai funcionar hoje à noite, mas amanhã os vasos fecham de novo. <strong>O Ignição Vascular mantém eles abertos todo dia.</strong> São 5 minutos por dia pra transformar o efeito temporário em resultado permanente.</p>';
   } else {
-    subEl.textContent = 'Sem o Soro, seus vasos vão demorar mais pra abrir. O Ignição Vascular corta esse tempo pela metade por R$27.';
-    ctxEl.innerHTML = '<p>Você dispensou o Soro, respeito. Mas ficar 21 dias com os vasos fechados enquanto espera é o caminho mais lento e frustrante. <strong>O Protocolo Ignição Vascular força os vasos a começarem a abrir desde o dia 1.</strong> São 5 minutos por dia que fazem o sangue voltar a circular com pressão onde precisa.</p>';
+    subEl.textContent = 'Você dispensou o Soro, tudo bem. Mas sem o Ignição, são 21 dias no escuro esperando acontecer. Por R$27 você corta esse tempo pela metade.';
+    ctxEl.innerHTML = '<p>21 dias com os vasos fechados é o caminho mais lento e frustrante que existe. <strong>O Ignição Vascular força os vasos a abrir desde o dia 1.</strong> 5 minutos por dia e o sangue começa a circular com pressão onde precisa.</p>';
   }
 
   // Track cross-sell view
