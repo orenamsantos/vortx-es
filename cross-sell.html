@@ -18,6 +18,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .page{position:relative;z-index:1;max-width:540px;margin:0 auto;padding:0 20px}
 
 /* HEADER */
+.cross-timer{text-align:center;margin-bottom:24px}
+.cross-timer-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(212,148,10,.08);border:1px solid rgba(212,148,10,.2);border-radius:var(--r-btn);font-family:var(--ff-m);font-size:.85rem;font-weight:600;color:var(--amber)}
 .cross-header{text-align:center;padding:48px 0 32px}
 .cross-header .icon{font-size:3rem;width:80px;height:80px;display:flex;align-items:center;justify-content:center;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:50%;margin:0 auto 20px;animation:pulse 3s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
@@ -110,6 +112,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <p class="sub" id="cross-sub"></p>
   </div>
 
+  <!-- TIMER -->
+  <div class="cross-timer fade-up d1">
+    <div class="cross-timer-badge">⏱ Essa oferta expira em <span id="cross-timer">05:00</span></div>
+  </div>
+
   <!-- CONTEXTO ADAPTIVO -->
   <div class="context fade-up d1" id="cross-context"></div>
 
@@ -178,6 +185,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
 <script>
 (function(){
+  // Timer
+  let sec=5*60;const timerEl=document.getElementById('cross-timer');
+  const timerIv=setInterval(()=>{sec--;if(sec<=0){clearInterval(timerIv);sec=0}const m=Math.floor(sec/60),s=sec%60;timerEl.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');if(sec<=60)timerEl.style.color='#C44B4B'},1e3);
+
   const p = new URLSearchParams(window.location.search);
   const soro = p.get('soro');
   const n = p.get('name');
