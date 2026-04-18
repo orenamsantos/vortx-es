@@ -1,5 +1,5 @@
 // ============================================================
-// VORTX  -  Tracking Layer v2 (Lazy Load)
+// VORTX Tracking Layer v2 (Lazy Load)
 // GA4 + Meta Pixel + TikTok Pixel + Clarity
 // Pixels carregam DEPOIS do render pra não afetar performance
 // Eventos ficam em fila e disparam quando pixels carregarem
