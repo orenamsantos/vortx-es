@@ -60,7 +60,7 @@ const STEPS = [
     id: 1,
     phase: 1,
     type: "text-input",
-    question: "Antes de qualquer coisa — como eu te chamo?",
+    question: "Antes de qualquer coisa como eu te chamo?",
     microcopy: "O que você vai ver aqui é pessoal. Cada resposta gera um resultado único pro seu caso.",
     field: { name: "userName", placeholder: "Seu primeiro nome...", maxLength: 30 },
     weight: 0,
