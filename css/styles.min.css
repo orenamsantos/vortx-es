@@ -173,7 +173,7 @@ a { color: var(--gold); text-decoration: none; }
 .gate-headline {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(1.55rem, 5.5vw, 2.2rem);
+  font-size: clamp(1.65rem, 6vw, 2.2rem);
   line-height: 1.2;
   color: var(--text-primary);
   max-width: 480px;
@@ -189,11 +189,42 @@ a { color: var(--gold); text-decoration: none; }
 }
 
 .gate-subheadline {
-  font-size: .92rem;
+  font-size: clamp(1.1rem, 3.2vw, 1.2rem);
   font-weight: 300;
   color: var(--text-secondary);
   max-width: 400px;
   line-height: 1.65;
+}
+
+.gate-timer-strip {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: var(--radius-btn);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: .3px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(201, 168, 76, 0.06);
+}
+
+.gate-timer-strip::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, .18), transparent);
+  animation: stripShimmer 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes stripShimmer {
+  0% { transform: translateX(-100%); }
+  50%, 100% { transform: translateX(100%); }
 }
 
 .gate-social-proof {

@@ -110,6 +110,7 @@
       <div class="gate-badge">${GATE_DATA.badge}</div>
       <h1 class="gate-headline">${GATE_DATA.headline}</h1>
       <p class="gate-subheadline">${GATE_DATA.subheadline}</p>
+      ${GATE_DATA.timerStrip ? `<div class="gate-timer-strip">${GATE_DATA.timerStrip}</div>` : ""}
       <button class="btn-cta" id="btn-start">${GATE_DATA.cta}</button>
       <div class="gate-social-proof">
         <div class="stars">★ ★ ★ ★ ★</div>
