@@ -68,7 +68,7 @@
       cta: "VER MEUS HÁBITOS",
     },
     {
-      afterStep: 17,
+      afterStep: 14,
       emoji: "🔴",
       headline: 'Você vai ver um número agora. <span class="highlight">Ele revela o quanto seus vasos já fecharam.</span>',
       getText: () => {
@@ -894,7 +894,7 @@
   function showProtocol() {
     showScreen("protocol");
     const name     = state.userData.name || "você";
-    const painArea = state.answers[21];
+    const painArea = state.answers[16];
 
     const headlineMap = {
       parceira: "O Protocolo Pra Você Voltar a Fazer Sua Mulher Implorar Por Mais",
@@ -955,7 +955,7 @@
     showScreen("pricing");
     if (window.vortxTrack) vortxTrack("view_pricing", { score: state.score });
 
-    const painArea  = state.answers[21];
+    const painArea  = state.answers[16];
     const name      = state.userData.name || "";
     const buildCheckoutCta = (planId) => {
       const plan = PRICING_DATA.plans.find((p) => p.id === planId);
@@ -1008,8 +1008,8 @@
       </div>
 
       <div class="pricing-anchor-block">
-        <p class="pricing-anchor-text">Um urologista vascular cobra <strong>R$1.200 a R$2.500 por consulta</strong>. Você precisaria de 6 a 10 consultas só pra DIAGNOSTICAR o que esse protocolo já RESOLVE.</p>
-        <p class="pricing-anchor-sub">O acesso completo custa menos do que uma única consulta. E funciona onde a consulta falha.</p>
+        <p class="pricing-anchor-text">Cada m\u00EAs sem agir, voc\u00EA perde mais tamanho, mais firmeza, mais dura\u00E7\u00E3o. Em 12 meses, o dano vira irrevers\u00EDvel. O custo de N\u00C3O agir \u00E9 perder o que te faz homem.</p>
+        <p class="pricing-anchor-sub">O acesso completo custa menos que um jantar. E pode mudar os pr\u00F3ximos 20 anos da sua vida.</p>
       </div>
 
       <div class="pricing-plans">${plansHtml}</div>
