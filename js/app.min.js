@@ -73,7 +73,7 @@
       headline: 'Você vai ver um número agora. <span class="highlight">Ele revela o quanto seus vasos já fecharam.</span>',
       getText: () => {
         const nome = state.userData.name || "você";
-        return `${nome}, o sistema cruzou suas respostas com 17.483 diagnósticos. Alguns homens ficam em choque. Outros sentem alívio. Prepara.`;
+        return `${nome}, o sistema cruzou suas respostas com 17.483 diagnósticos. Alguns homens ficam em choque, outros sentem alívio. Prepara.`;
       },
       stat: "A maioria dos homens nunca soube que esse número existia.",
       cta: "VER MEU DIAGNÓSTICO",
@@ -822,7 +822,7 @@
       <p class="result-description">${zone.description}</p>
       <div class="result-critical-areas">${areasHtml}</div>
       <div class="result-urgency-block">
-        <p class="result-urgency-text">Seus vasos estão se fechando agora, enquanto você lê isso. Cada mês sem agir, mais bloqueio, menos sangue, menos tamanho, menos duração. Esse grau ainda tem reversão, mas não pra sempre.</p>
+        <p class="result-urgency-text">Seus vasos estão se fechando agora, enquanto você lê isso. Cada mês sem agir é mais bloqueio, menos sangue, menos tamanho, menos duração, e esse grau ainda tem reversão, mas não pra sempre.</p>
         <p class="result-urgency-subtext">O protocolo de reversão vascular foi calibrado pro seu perfil exato.</p>
       </div>
       <div style="width:100%;padding:20px 0;display:flex;justify-content:center;">
@@ -862,7 +862,7 @@
 
     let bridgeText;
     if (score <= 35) {
-      bridgeText = `${name}, seus vasos estão quase fechados. Mas "quase" significa que ainda dá tempo. O protocolo foi criado exatamente pra esse grau de bloqueio, pra forçar o sangue a voltar. Não é pra todo mundo. É pra quem chegou até aqui e quer o tamanho, a firmeza e a duração de volta.`;
+      bridgeText = `${name}, seus vasos estão quase fechados, mas "quase" significa que ainda dá tempo. O protocolo foi criado exatamente pra esse grau de bloqueio, pra forçar o sangue a voltar. Não é pra todo mundo. É pra quem chegou até aqui e quer o tamanho, a firmeza e a duração de volta.`;
     } else if (score <= 60) {
       bridgeText = `${name}, seus vasos estão se fechando, mês a mês. O tamanho já caiu. A duração já encurtou. O protocolo de reversão vascular está calibrado pro seu grau exato de bloqueio. Mas cada mês sem agir fecha mais um vaso.`;
     } else if (score <= 80) {
@@ -993,7 +993,7 @@
     const pricingHeadline = score <= 35
       ? `${name ? name + ", seus" : "Seus"} vasos estão quase fechados. Essa é a última janela.`
       : score <= 60
-      ? `${name ? name + ", o" : "O"} bloqueio ainda é reversível. Mas não por muito tempo.`
+      ? `${name ? name + ", o" : "O"} bloqueio ainda é reversível, mas não por muito tempo.`
       : `${name ? name + ", o" : "O"} protocolo vascular está pronto. Falta você.`;
 
     document.getElementById("pricing").innerHTML = `
@@ -1008,14 +1008,14 @@
       </div>
 
       <div class="pricing-anchor-block">
-        <p class="pricing-anchor-text">Cada m\u00EAs sem agir, voc\u00EA perde mais tamanho, mais firmeza, mais dura\u00E7\u00E3o. Em 12 meses, o dano vira irrevers\u00EDvel. O custo de N\u00C3O agir \u00E9 perder o que te faz homem.</p>
-        <p class="pricing-anchor-sub">O acesso completo custa menos que um jantar. E pode mudar os pr\u00F3ximos 20 anos da sua vida.</p>
+        <p class="pricing-anchor-text">Cada m\u00EAs sem agir, voc\u00EA perde mais tamanho, mais firmeza, mais dura\u00E7\u00E3o. Em 12 meses o dano vira irrevers\u00EDvel, e o custo de n\u00E3o agir \u00E9 perder o que te faz homem.</p>
+        <p class="pricing-anchor-sub">O acesso completo custa menos que um jantar, e pode mudar os pr\u00F3ximos 20 anos da sua vida.</p>
       </div>
 
       <div class="pricing-plans">${plansHtml}</div>
 
       <div class="pricing-urgency-bio-block">
-        <p class="pricing-urgency-bio-text">Hoje à noite você vai deitar na cama. Vai olhar pro teto. E vai saber que poderia ter feito diferente. Amanhã vai acordar igual, ou pior. O bloqueio vascular não espera. Não para. Não negocia. <strong>A única pergunta é: você vai agir enquanto ainda dá tempo?</strong></p>
+        <p class="pricing-urgency-bio-text">Hoje à noite você vai deitar na cama. Vai olhar pro teto e vai saber que poderia ter feito diferente. Amanhã vai acordar igual ou pior. O bloqueio vascular não espera, não para, não negocia. <strong>A única pergunta é: você vai agir enquanto ainda dá tempo?</strong></p>
       </div>
 
       <div class="guarantee-box guarantee-box--pre-cta">
@@ -1064,7 +1064,7 @@
             <div class="timer-expired-block">
               <div class="timer-expired-icon">⏰</div>
               <p class="timer-expired-title">Esse preço acabou.</p>
-              <p class="timer-expired-text">O valor de R$67 não está mais disponível. O protocolo voltou para R$197.</p>
+              <p class="timer-expired-text">O valor de R$67 não está mais disponível e o protocolo voltou para R$197.</p>
               <button class="btn-cta" id="btn-recover-offer">QUERO MAIS 10 MINUTOS COM O PREÇO ESPECIAL</button>
             </div>
           `;
