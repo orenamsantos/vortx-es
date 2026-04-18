@@ -405,8 +405,9 @@ a { color: var(--gold); text-decoration: none; }
 
 /* Highlighted keyword in question — HARNA style */
 .step-question .highlight {
-  color: var(--gold);
-  font-style: italic;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .step-microcopy {
@@ -675,8 +676,9 @@ a { color: var(--gold); text-decoration: none; }
 }
 
 .interstitial-headline .highlight {
-  color: var(--gold);
-  font-style: italic;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .interstitial-text {
